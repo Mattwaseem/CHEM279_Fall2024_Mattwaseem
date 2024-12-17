@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script id="vshader" type="x-shader/x-vertex">
+    		precision highp float;
+            mat4 quatToMat4(vec4 q) {
+                float xx = q.x * q.x;
+                float yy = q.y * q.y;
+                float zz = q.z * q.z;
+                float xy = q.x * q.y;
+                float xz = q.x * q.z;
+                float yz = q.y * q.z;
+                float wx = q.w * q.x;
+                float wy = q.w * q.y;
+                float wz = q.w * q.z;
+            
+                mat4 result;
+                result[0] = vec4(1.0 - 2.0 * (yy + zz), 2.0 * (xy - wz), 2.0 * (xz + wy), 0.0);
+                result[1] = vec4(2.0 * (xy + wz), 1.0 - 2.0 * (xx + zz), 2.0 * (yz - wx), 0.0);
+                result[2] = vec4(2.0 * (xz - wy), 2.0 * (yz + wx), 1.0 - 2.0 * (xx + yy), 0.0);
+                result[3] = vec4(0.0, 0.0, 0.0, 1.0);
+                return result;
+            }
+
+            uniform mat4 modelViewMatrix;
+            uniform mat4 projectionMatrix;
+            uniform float time;
+            
+            attribute vec3 position;         // Original position of the object
+            attribute vec2 uv;               // UV coordinates for texture mapping (if needed)
+            attribute vec3 instancePosition; // The per-instance position (for instancing)
+            attribute vec4 instanceRot;      // The per-instance position (for instancing)
+
+            varying vec2 vUv;       // Pass UV to fragment shader
+            varying vec3 vNormal;   // Pass normal to fragment shader
+            varying vec3 vPosition; // Pass position to fragment shader
+
+
+            void main() {
+                mat4 rotM = quatToMat4(instanceRot);
+                vec4 rotatedPosition = rotM * vec4(position, 1.0); 
+                vec4 mvPosition = modelViewMatrix * (rotatedPosition + vec4(instancePosition, 0.0));
+            
+                // Calculate the normal (we can use the original position for simplicity)
+                vNormal = normalize(rotatedPosition.xyz); 
+            
+                // Pass the world position to the fragment shader
+                vPosition = mvPosition.xyz;
+            
+                // Pass the UV to the fragment shader
+                vUv = uv;
+            
+                // Project to 2D screen space
+                gl_Position = projectionMatrix * mvPosition;
+            }
+    	</script>
+    <script id="fshader" type="x-shader/x-fragment">
+    		precision highp float;
+
+            uniform vec3 dirLightDir;    // Direction of light (if needed)
+            uniform vec3 dirLightPos;    // Direction of light (if needed)
+            uniform vec3 dirLightColor;        // Color of the light
+            uniform vec3 ambientLightColor;
+            uniform vec3 part_color;
+
+            varying vec2 vUv;               // Passed from vertex shader
+            varying vec3 vNormal;           // Normal at the point, passed from vertex shader
+            varying vec3 vPosition;         // Position in world space, passed from vertex shader
+
+            void main() {
+                // Simple lighting: ambient + diffuse lighting
+                float diffuse = max(dot(normalize(vNormal), normalize(dirLightDir)), 0.0); // Diffuse lighting
+                vec3 color = ambientLightColor + dirLightColor * diffuse;
+                color *= part_color;
+                //color = part_color;
+                // Output the final color (a solid color for testing)
+                gl_FragColor = vec4(color, 1.0);
+            }
+    	</script>
+</head>
+
+<body>
+    <div id="threejs-container"></div> <!-- Container for Three.js 3D canvas -->
+
+    <!-- UI container with buttons, title, etc. -->
+    <div id="ui-container">
+        <h1>Water Simulation</h1>
+        <div id="error"></div>
+    </div>
+
+
+    <!-- ThreeJS -->
+    <!-- Direct pull from https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js -->
+    <script src="./three.js"></script>
+    <!-- OrbitControls for ThreeJS -->
+    <!-- Direct pull from https://cdn.jsdelivr.net/npm/three/examples/js/controls/OrbitControls.js-->
+    <script src="./OrbitControls.js"></script>
+    <script src="./BufferGeometryUtils.js"></script>
+
+    <script src="./dat.gui.min.js"></script>
+    <!-- Our front end script -->
+    <script src="three_handler.js"></script>
+    <script src="gui_handler.js"></script>
+    <script src="sim_handler.js"></script>
+</body>
+
+</html>

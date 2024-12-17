@@ -1,0 +1,32 @@
+Parsed Shell 1: Center = (0, 0, 0), Exponent = 1, Angular Momentum = (0, 0, 0)
+Parsed Shell 2: Center = (0, 0, 0), Exponent = 2, Angular Momentum = (1, 0, 0)
+Parsed parameters (Analytical 3D):
+Shell 1 has 3 functions.
+This shell info: R( 0, 0, 0), with angular momentum: 0, coefficient: 1
+Shell 2 has 3 functions.
+This shell info: R( 0, 0, 0), with angular momentum: 1, coefficient: 2
+i: 0, j: 0
+comb_l1_i: 1, comb_l2_j: 1
+double_fact: 1
+RP - x1: 0, RP - x2: 0
+Power terms: 1, 0
+Denominator term: 1
+i: 0, j: 0
+comb_l1_i: 1, comb_l2_j: 1
+double_fact: 1
+RP - x1: 0, RP - x2: 0
+Power terms: 1, 1
+Denominator term: 1
+i: 0, j: 0
+comb_l1_i: 1, comb_l2_j: 1
+double_fact: 1
+RP - x1: 0, RP - x2: 0
+Power terms: 1, 1
+Denominator term: 1
+Overlap integral between Shell 1 and Shell 2
+  0.0000  1.0233  1.0233
+  0.0000  1.0233       0
+  1.0233  0.0000       0
+       0       0  1.0233
+The components of angular momentum (l, m, n) for the matrix column, from top to bottom, are listed sequentially as: (0, 0, 0).
+The components of angular momentum (l, m, n) for the matrix row, from left to right, are listed sequentially as: (1, 0, 0).

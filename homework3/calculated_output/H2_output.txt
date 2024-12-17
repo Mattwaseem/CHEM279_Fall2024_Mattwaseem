@@ -1,0 +1,45 @@
+Number of atoms: 2, Charge: 0
+Atomic Number: 1, X: 0, Y: 0, Z: 0
+Atomic Number: 1, X: 1.3984, Y: 0, Z: 0
+Number of basis functions: 2
+Number of electrons: 2
+Number of basis functions: 2
+Number of electrons: 2
+Basis function center:         0        0        0
+
+Angular momentum:         0        0        0
+
+Exponents: 3.42525 0.623914 0.168855 
+Coefficients: 0.154329 0.535328 0.444635 
+Basis function center:    1.3984        0        0
+
+Angular momentum:         0        0        0
+
+Exponents: 3.42525 0.623914 0.168855 
+Coefficients: 0.154329 0.535328 0.444635 
+Overlap matrix size: 2 x 2
+Overlap matrix:
+   10.7421    8.3960
+    8.3960   10.7421
+Constructor: Overlap matrix size: 2 x 2
+Constructor: Diagonal energies size: 2
+Hamiltonian Matrix:
+  -13.6000  -69.9390
+  -69.9390  -13.6000
+Hamiltonian matrix
+  -13.6000  -69.9390
+  -69.9390  -13.6000
+X_mat (S^(-1/2))
+   0.4407  -0.2121
+  -0.2121   0.4407
+MO coefficients (C Matrix): 
+  -0.1616  -0.4617
+  -0.1616   0.4617
+MO overlap matrix:
+   1.0000e+00   2.1323e-17
+  -1.8689e-16   1.0000e+00
+Nuclear repulsion energy: 0.7151
+The molecule in file /Users/nematsfolder/chem279/homework3/sample_input/H2.txt has energy 20.364717
+Eigenvalues of the overlap matrix S:
+   -4.3651
+   24.0147

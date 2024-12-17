@@ -1,0 +1,4 @@
+Parsed parameters (Numerical 1D):
+Gaussian 1: x0 = 0, alpha = 1, l = 0
+Gaussian 2: x0 = 0, alpha = 1, l = 1
+Overlap integral result (Numerical 1D): -1.17714e-17

@@ -1,0 +1,17 @@
+{
+    "name": "chem279-final",
+    "version": "0.1.0",
+    "description": "Node.js web server to serve the water sim UI",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "dat.gui": "^0.7.9",
+        "express": "^4.17.1",
+        "node-addon-api": "^8.2.2",
+        "node-gyp": "^10.2.0",
+        "three": "^0.170.0",
+        "ws": "^8.18.0"
+    }
+}

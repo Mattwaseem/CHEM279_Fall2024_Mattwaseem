@@ -1,0 +1,6 @@
+/Users/nematsfolder/chem279/homework1/build/CMakeFiles/ljpotenial.dir
+/Users/nematsfolder/chem279/homework1/build/CMakeFiles/run_ljpotenial.dir
+/Users/nematsfolder/chem279/homework1/build/CMakeFiles/clean-bin.dir
+/Users/nematsfolder/chem279/homework1/build/CMakeFiles/clean-all.dir
+/Users/nematsfolder/chem279/homework1/build/CMakeFiles/edit_cache.dir
+/Users/nematsfolder/chem279/homework1/build/CMakeFiles/rebuild_cache.dir

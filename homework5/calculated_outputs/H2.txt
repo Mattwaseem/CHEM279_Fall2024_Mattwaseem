@@ -1,0 +1,7 @@
+Nuclear Repulsion Energy: 19.459 eV.
+Electron Energy: -747.551 eV.
+Total Energy: -728.092 eV.
+Gradient:
+        0        0        0
+        0        0        0
+

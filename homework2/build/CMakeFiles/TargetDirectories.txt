@@ -1,0 +1,11 @@
+/Users/nematsfolder/chem279/homework2/build/CMakeFiles/homework2_exec.dir
+/Users/nematsfolder/chem279/homework2/build/CMakeFiles/run_numerical_1.dir
+/Users/nematsfolder/chem279/homework2/build/CMakeFiles/run_numerical_2.dir
+/Users/nematsfolder/chem279/homework2/build/CMakeFiles/run_numerical_3.dir
+/Users/nematsfolder/chem279/homework2/build/CMakeFiles/run_analytical_1.dir
+/Users/nematsfolder/chem279/homework2/build/CMakeFiles/run_analytical_2.dir
+/Users/nematsfolder/chem279/homework2/build/CMakeFiles/run_analytical_3.dir
+/Users/nematsfolder/chem279/homework2/build/CMakeFiles/run-all.dir
+/Users/nematsfolder/chem279/homework2/build/CMakeFiles/clean-all.dir
+/Users/nematsfolder/chem279/homework2/build/CMakeFiles/edit_cache.dir
+/Users/nematsfolder/chem279/homework2/build/CMakeFiles/rebuild_cache.dir

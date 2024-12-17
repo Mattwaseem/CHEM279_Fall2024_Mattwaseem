@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Turk"
+  given-names: "Dakota"
+  orcid: https://orcid.org/0009-0009-9548-6376
+- family-names: "Waseem"
+  given-names: "Nematullah"
+  orcid: https://orcid.org/0009-0004-1198-7805
+title: "CHEM279 Final Prokect"
+version: 0.1.0
+date-released: 2024-11-10
+url: "https://github.com/dturk0610/CHEM279_Final_Project.git"

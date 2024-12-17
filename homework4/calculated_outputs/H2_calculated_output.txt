@@ -1,0 +1,35 @@
+Overlap Matrix S:
+   10.7421    8.3960
+    8.3960   10.7421
+
+gamma Matrix:
+   9.0000   9.0000
+   9.0000   9.0000
+
+H_core Matrix (eV):
+  -52.9763  -75.5644
+  -75.5644  -52.9763
+
+Final Fock Matrix Fa (eV):
+  -6.9839e+01  -1.5113e+02
+  -1.5113e+02  -6.9839e+01
+
+Final Fock Matrix Fb (eV):
+  -6.9839e+01  -1.5113e+02
+  -1.5113e+02  -6.9839e+01
+
+Final Density Matrix P_alpha:
+   0.5000   0.5000
+   0.5000   0.5000
+
+Final Density Matrix P_beta:
+   0.5000   0.5000
+   0.5000   0.5000
+
+Total Density Matrix P_total:
+   1.0000   1.0000
+   1.0000   1.0000
+
+Electron Energy: -570.475 eV
+Total Energy ECNDO/2: -551.017 eV
+Nuclear Repulsion Energy: 19.4587 eV

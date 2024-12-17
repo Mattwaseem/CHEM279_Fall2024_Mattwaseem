@@ -1,0 +1,5 @@
+/Users/nematsfolder/chem279/homework3/build/CMakeFiles/MoleculeSetup.dir
+/Users/nematsfolder/chem279/homework3/build/CMakeFiles/run.dir
+/Users/nematsfolder/chem279/homework3/build/CMakeFiles/clean-all.dir
+/Users/nematsfolder/chem279/homework3/build/CMakeFiles/edit_cache.dir
+/Users/nematsfolder/chem279/homework3/build/CMakeFiles/rebuild_cache.dir

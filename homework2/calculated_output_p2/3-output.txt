@@ -1,0 +1,44 @@
+Parsed Shell 1: Center = (0, 0, 0), Exponent = 1, Angular Momentum = (2, 0, 0)
+Parsed Shell 2: Center = (1, 1, 0), Exponent = 0.5, Angular Momentum = (1, 0, 0)
+Parsed parameters (Analytical 3D):
+Shell 1 has 3 functions.
+This shell info: R( 0, 0, 0), with angular momentum: 2, coefficient: 1
+Shell 2 has 3 functions.
+This shell info: R( 1, 1, 0), with angular momentum: 1, coefficient: 0.5
+i: 0, j: 0
+comb_l1_i: 1, comb_l2_j: 1
+double_fact: 1
+RP - x1: 0.333333, RP - x2: -0.666667
+Power terms: 0.111111, -0.666667
+Denominator term: 1
+i: 1, j: 1
+comb_l1_i: 2, comb_l2_j: 1
+double_fact: 1
+RP - x1: 0.333333, RP - x2: -0.666667
+Power terms: 0.333333, 1
+Denominator term: 3
+i: 2, j: 0
+comb_l1_i: 1, comb_l2_j: 1
+double_fact: 1
+RP - x1: 0.333333, RP - x2: -0.666667
+Power terms: 1, -0.666667
+Denominator term: 3
+i: 0, j: 0
+comb_l1_i: 1, comb_l2_j: 1
+double_fact: 1
+RP - x1: 0.333333, RP - x2: -0.666667
+Power terms: 1, 1
+Denominator term: 1
+i: 0, j: 0
+comb_l1_i: 1, comb_l2_j: 1
+double_fact: 1
+RP - x1: 0, RP - x2: 0
+Power terms: 1, 1
+Denominator term: 1
+Overlap integral between Shell 1 and Shell 2
+  -0.0768  1.0370  1.4472
+  -0.0768  1.0370       0
+  1.0370  -0.0768       0
+       0       0  1.4472
+The components of angular momentum (l, m, n) for the matrix column, from top to bottom, are listed sequentially as: (2, 0, 0).
+The components of angular momentum (l, m, n) for the matrix row, from left to right, are listed sequentially as: (1, 0, 0).
